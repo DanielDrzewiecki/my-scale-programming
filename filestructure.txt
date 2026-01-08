@@ -1,0 +1,71 @@
+|-- .gitattributes
+|-- .gitignore
+|-- LICENSE
+|-- README.md
+|-- components.json
+|-- index.html
+|-- package-lock.json
+|-- package.json
+|-- postcss.config.js
+|-- public
+    |-- vite.svg
+|-- src
+    |-- App.css
+    |-- App.tsx
+    |-- assets
+        |-- cube-leg.png
+        |-- growth.png
+        |-- icon.ico
+        |-- icon.png
+        |-- looking-ahead.png
+        |-- pilot.png
+        |-- react.svg
+        |-- reflecting.png
+    |-- components
+        |-- About.tsx
+        |-- Contact.tsx
+        |-- Cta.tsx
+        |-- FAQ.tsx
+        |-- Features.tsx
+        |-- Footer.tsx
+        |-- Hero.tsx
+        |-- HeroCards.tsx
+        |-- HowItWorks.tsx
+        |-- Icons.tsx
+        |-- Navbar.tsx
+        |-- Newsletter.tsx
+        |-- Pricing.tsx
+        |-- ScrollToTop.tsx
+        |-- Services.tsx
+        |-- Sponsors.tsx
+        |-- Statistics.tsx
+        |-- Team.tsx
+        |-- Testimonials.tsx
+        |-- mode-toggle.tsx
+        |-- theme-provider.tsx
+        |-- ui
+            |-- accordion.tsx
+            |-- avatar.tsx
+            |-- badge.tsx
+            |-- button.tsx
+            |-- card.tsx
+            |-- dropdown-menu.tsx
+            |-- input.tsx
+            |-- navigation-menu.tsx
+            |-- sheet.tsx
+            |-- skeleton.tsx
+            |-- textarea.tsx
+    |-- content
+        |-- content Kopie.txt
+        |-- content.ts
+        |-- i18n
+            |-- de.ts
+    |-- index.css
+    |-- lib
+        |-- utils.ts
+    |-- main.tsx
+    |-- vite-env.d.ts
+|-- tailwind.config.js
+|-- tsconfig.json
+|-- tsconfig.node.json
+|-- vite.config.ts

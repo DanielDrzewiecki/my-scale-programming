@@ -1,0 +1,252 @@
+{
+  "name": "Lead Form Webhook",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "5e37efb6-de3c-41d7-b584-28fc4143f74a",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "webhook-node",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [240, 300],
+      "webhookId": "5e37efb6-de3c-41d7-b584-28fc4143f74a"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Lead-Daten extrahieren\nconst leadData = $input.first().json;\n\n// UTM-Parameter formatieren\nconst utmInfo = {\n  source: leadData.utm_source || 'direkt',\n  medium: leadData.utm_medium || 'keine',\n  campaign: leadData.utm_campaign || 'keine',\n  content: leadData.utm_content || 'keine',\n  term: leadData.utm_term || 'keine'\n};\n\n// Lead-Scoring basierend auf UTM-Parametern\nlet leadScore = 0;\nlet priority = 'low';\n\n// Facebook/Instagram = höhere Priorität\nif (utmInfo.source === 'facebook' || utmInfo.source === 'instagram') {\n  leadScore += 50;\n  priority = 'high';\n}\n\n// Google Ads = mittlere Priorität\nif (utmInfo.source === 'google') {\n  leadScore += 30;\n  priority = 'medium';\n}\n\n// LinkedIn = B2B Priorität\nif (utmInfo.source === 'linkedin') {\n  leadScore += 40;\n  priority = 'high';\n}\n\n// Premium Kampagnen = höhere Priorität\nif (utmInfo.campaign && utmInfo.campaign.includes('premium')) {\n  leadScore += 20;\n  priority = 'high';\n}\n\n// E-Mail-Domain-Check\nconst emailDomain = leadData.email.split('@')[1];\nif (['gmail.com', 'yahoo.com', 'hotmail.com'].includes(emailDomain)) {\n  leadScore -= 10; // Freemail = niedrigere Priorität\n}\n\n// Finale Priorität bestimmen\nif (leadScore > 50) priority = 'high';\nelse if (leadScore > 20) priority = 'medium';\nelse priority = 'low';\n\nreturn {\n  ...leadData,\n  utmInfo,\n  leadScore,\n  priority,\n  processedAt: new Date().toISOString()\n};"
+      },
+      "id": "lead-scoring",
+      "name": "Lead Scoring",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "condition-1",
+              "leftValue": "={{ $json.priority }}",
+              "rightValue": "high",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "priority-check",
+      "name": "Priority Check",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [680, 300]
+    },
+    {
+      "parameters": {
+        "fromEmail": "noreply@ihre-domain.de",
+        "toEmail": "priority@ihre-domain.de",
+        "subject": "🔥 HOHE PRIORITÄT - Lead: {{ $json.name }}",
+        "message": "🚨 HOHE PRIORITÄT LEAD EINGEGANGEN! 🚨\n\n" +
+                  "📋 LEAD-DETAILS:\n" +
+                  "Name: {{ $json.name }}\n" +
+                  "E-Mail: {{ $json.email }}\n" +
+                  "Telefon: {{ $json.phone }}\n\n" +
+                  "📊 UTM-INFORMATIONEN:\n" +
+                  "Source: {{ $json.utmInfo.source }}\n" +
+                  "Medium: {{ $json.utmInfo.medium }}\n" +
+                  "Campaign: {{ $json.utmInfo.campaign }}\n" +
+                  "Content: {{ $json.utmInfo.content }}\n" +
+                  "Term: {{ $json.utmInfo.term }}\n\n" +
+                  "🎯 LEAD-SCORING:\n" +
+                  "Score: {{ $json.leadScore }}\n" +
+                  "Priorität: {{ $json.priority }}\n" +
+                  "Verarbeitet: {{ $json.processedAt }}\n\n" +
+                  "🌐 TECHNISCHE DETAILS:\n" +
+                  "URL: {{ $json.url }}\n" +
+                  "User Agent: {{ $json.user_agent }}\n" +
+                  "Landing Page: {{ $json.landing_page_topic }}",
+        "options": {}
+      },
+      "id": "high-priority-email",
+      "name": "Hohe Priorität E-Mail",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2,
+      "position": [900, 200]
+    },
+    {
+      "parameters": {
+        "fromEmail": "noreply@ihre-domain.de",
+        "toEmail": "leads@ihre-domain.de",
+        "subject": "📝 Neuer Lead: {{ $json.name }}",
+        "message": "📋 NEUER LEAD EINGEGANGEN\n\n" +
+                  "📋 LEAD-DETAILS:\n" +
+                  "Name: {{ $json.name }}\n" +
+                  "E-Mail: {{ $json.email }}\n" +
+                  "Telefon: {{ $json.phone }}\n\n" +
+                  "📊 UTM-INFORMATIONEN:\n" +
+                  "Source: {{ $json.utmInfo.source }}\n" +
+                  "Medium: {{ $json.utmInfo.medium }}\n" +
+                  "Campaign: {{ $json.utmInfo.campaign }}\n" +
+                  "Content: {{ $json.utmInfo.content }}\n" +
+                  "Term: {{ $json.utmInfo.term }}\n\n" +
+                  "🎯 LEAD-SCORING:\n" +
+                  "Score: {{ $json.leadScore }}\n" +
+                  "Priorität: {{ $json.priority }}\n" +
+                  "Verarbeitet: {{ $json.processedAt }}\n\n" +
+                  "🌐 TECHNISCHE DETAILS:\n" +
+                  "URL: {{ $json.url }}\n" +
+                  "User Agent: {{ $json.user_agent }}\n" +
+                  "Landing Page: {{ $json.landing_page_topic }}",
+        "options": {}
+      },
+      "id": "normal-email",
+      "name": "Normale E-Mail",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2,
+      "position": [900, 400]
+    },
+    {
+      "parameters": {
+        "fromEmail": "noreply@ihre-domain.de",
+        "toEmail": "{{ $json.email }}",
+        "subject": "Vielen Dank für Ihr Interesse!",
+        "message": "Hallo {{ $json.name }},\n\n" +
+                  "vielen Dank für Ihre Anfrage! Wir haben Ihre Nachricht erhalten und werden uns schnellstmöglich bei Ihnen melden.\n\n" +
+                  "📋 IHRE ANFRAGE:\n" +
+                  "Name: {{ $json.name }}\n" +
+                  "E-Mail: {{ $json.email }}\n" +
+                  "Telefon: {{ $json.phone }}\n\n" +
+                  "📞 KONTAKT:\n" +
+                  "Bei Fragen erreichen Sie uns unter:\n" +
+                  "E-Mail: info@ihre-domain.de\n" +
+                  "Telefon: +49 123 456789\n\n" +
+                  "Mit freundlichen Grüßen\n" +
+                  "Ihr Team",
+        "options": {}
+      },
+      "id": "auto-reply",
+      "name": "Auto-Reply an Lead",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2,
+      "position": [1120, 300]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "{\n  \"success\": true,\n  \"message\": \"Lead erfolgreich verarbeitet\",\n  \"leadId\": \"{{ $json.name }}_{{ $json.timestamp }}\",\n  \"priority\": \"{{ $json.priority }}\",\n  \"score\": {{ $json.leadScore }}\n}",
+        "options": {
+          "responseHeaders": {
+            "entries": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        }
+      },
+      "id": "webhook-response",
+      "name": "Webhook Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [1340, 300]
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Lead Scoring",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Lead Scoring": {
+      "main": [
+        [
+          {
+            "node": "Priority Check",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Priority Check": {
+      "main": [
+        [
+          {
+            "node": "Hohe Priorität E-Mail",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Normale E-Mail",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Hohe Priorität E-Mail": {
+      "main": [
+        [
+          {
+            "node": "Auto-Reply an Lead",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Normale E-Mail": {
+      "main": [
+        [
+          {
+            "node": "Auto-Reply an Lead",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Auto-Reply an Lead": {
+      "main": [
+        [
+          {
+            "node": "Webhook Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 1,
+  "updatedAt": "2024-01-15T10:30:00.000Z",
+  "versionId": "1"
+}

@@ -1,0 +1,485 @@
+export const content = {
+  hero: {
+    title: {
+      highlight: "Professionelles",
+      main: "Marketing für ",
+    },
+    subtitle: {
+      highlight: "Ihr Unternehmen",
+      main: "on demand",
+    },
+    description: "Verstärken Sie Ihr Team mit unseren erfahrenen Marketing-Experten. Flexibel, professionell und genau dann, wenn Sie uns brauchen. Profitieren Sie von jahrelanger Expertise ohne langfristige Bindung.",
+    buttons: {
+      primary: "Beratungsgespräch",
+      secondary: "Leistungen",
+    },
+  },
+
+  sponsors: {
+    title: "Unsere Marketing-Expertise für Sie",
+    areas: [
+      { name: "Social Media" },
+      { name: "Content Creation" },
+      { name: "SEO & SEA" },
+      { name: "Analytics" },
+      { name: "Branding" },
+      { name: "Performance" },
+    ],
+  },
+
+  about: {
+    title: {
+      highlight: "Über",
+      main: "Uns",
+    },
+    description: [
+      "Wir sind Ihr externer Marketing-Partner, der Ihr Unternehmen auf das nächste Level hebt. Mit unserem Team aus erfahrenen Marketing-Experten unterstützen wir Sie genau dann, wenn Sie zusätzliche Expertise benötigen - flexibel, professionell und resultatorientiert.",
+      "Von Content-Strategie bis Performance Marketing: Nutzen Sie unsere langjährige Erfahrung für Ihren Markterfolg, ohne sich langfristig zu binden.",
+    ],
+    image: {
+      src: "/src/assets/pilot.png",
+      alt: "Marketing Experte bei der Arbeit",
+    },
+  },
+
+  howItWorks: {
+    title: {
+      main: "So funktioniert",
+      highlight: "externes Marketing",
+    },
+    subtitle: "In wenigen Schritten bringen wir Ihr Marketing auf das nächste Level – professionell, flexibel und ergebnisorientiert.",
+    steps: [
+      {
+        icon: "MedalIcon",
+        title: "Schritt 1: Bedarfsanalyse",
+        description: "Wir analysieren Ihre Marketing-Anforderungen und entwickeln eine maßgeschneiderte Strategie für Ihre Ziele.",
+      },
+      {
+        icon: "MapIcon",
+        title: "Schritt 2: Experten-Match",
+        description: "Sie erhalten dedizierte Marketing-Experten, die perfekt zu Ihren Projekten und Ihrer Unternehmenskultur passen.",
+      },
+      {
+        icon: "PlaneIcon",
+        title: "Schritt 3: Umsetzung",
+        description: "Unsere Experten integrieren sich nahtlos in Ihr Team und setzen die Marketing-Strategie professionell um.",
+      },
+      {
+        icon: "GiftIcon",
+        title: "Schritt 4: Optimierung",
+        description: "Kontinuierliche Analyse und Optimierung sorgen für messbare Erfolge und nachhaltiges Wachstum.",
+      },
+    ],
+  },
+
+  features: {
+    title: {
+      main: "Unsere",
+      highlight: "Marketing-Expertise",
+    },
+    featureList: [
+      "Content Marketing",
+      "Social Media",
+      "SEO & SEA",
+      "Performance Marketing",
+      "Analytics & Tracking",
+      "E-Mail Marketing",
+      "Conversion Optimierung",
+      "Marketing Automation",
+      "Brand Building",
+    ],
+    cards: [
+      {
+        title: "Strategische Marketing-Planung",
+        description: "Entwickeln Sie mit uns eine maßgeschneiderte Marketing-Strategie, die Ihre Unternehmensziele optimal unterstützt.",
+        image: {
+          src: "/src/assets/looking-ahead.png",
+          alt: "Strategische Planung",
+        },
+      },
+      {
+        title: "Datengetriebene Optimierung",
+        description: "Nutzen Sie unsere Analytics-Expertise für kontinuierliche Performance-Verbesserungen und maximalen ROI.",
+        image: {
+          src: "/src/assets/reflecting.png",
+          alt: "Datenanalyse",
+        },
+      },
+      {
+        title: "Multi-Channel Marketing",
+        description: "Profitieren Sie von unserer Erfahrung in der Integration verschiedener Marketing-Kanäle für optimale Reichweite.",
+        image: {
+          src: "/src/assets/growth.png",
+          alt: "Multi-Channel Marketing",
+        },
+      },
+    ],
+  },
+
+  services: {
+    title: {
+      highlight: "Unsere",
+      main: "Services",
+    },
+    subtitle: "Professionelle Marketing-Dienstleistungen, die Ihr Unternehmen voranbringen.",
+    serviceList: [
+      {
+        title: "Strategische Beratung",
+        description: "Wir entwickeln maßgeschneiderte Marketing-Strategien, die Ihre Unternehmensziele optimal unterstützen.",
+        icon: "ChartIcon",
+      },
+      {
+        title: "Content Marketing",
+        description: "Von Social Media bis Blog: Wir erstellen relevanten Content, der Ihre Zielgruppe begeistert.",
+        icon: "WalletIcon",
+      },
+      {
+        title: "Performance Marketing",
+        description: "Mit datengetriebenen Kampagnen maximieren wir Ihre Conversion-Rate und ROI.",
+        icon: "MagnifierIcon",
+      },
+    ],
+    image: {
+      src: "/src/assets/cube-leg.png",
+      alt: "Über unsere Dienstleistungen",
+    },
+  },
+
+  cta: {
+    title: {
+      main: "Bringen Sie Ihr",
+      highlight: "Marketing",
+      end: "auf das nächste Level",
+    },
+    description: "Profitieren Sie von unserer Marketing-Expertise - flexibel, professionell und genau dann, wenn Sie sie brauchen. Lassen Sie uns gemeinsam Ihre Ziele erreichen.",
+    buttons: {
+      primary: "Jetzt Beratung anfragen",
+      secondary: "Mehr über unsere Services",
+    },
+  },
+
+  testimonials: {
+    title: {
+      main: "Was unsere",
+      highlight: "Kunden über uns sagen",
+    },
+    subtitle: "Erfahren Sie, wie unsere Marketing-Expertise Unternehmen zum Erfolg führt.",
+    list: [
+      {
+        image: "https://i.pravatar.cc/150?img=1",
+        name: "Maria Schulz",
+        position: "Marketing Direktorin, TechStart GmbH",
+        comment: "Das externe Marketing-Team hat unsere Online-Präsenz revolutioniert. Die Conversion-Rate ist um 150% gestiegen!",
+      },
+      {
+        image: "https://i.pravatar.cc/150?img=2",
+        name: "Peter Meier",
+        position: "CEO, Digital Solutions AG",
+        comment: "Flexible, professionelle Unterstützung genau dann, wenn wir sie brauchen. Die ROI-Entwicklung spricht für sich.",
+      },
+      // ... weitere Testimonials
+    ],
+  },
+
+  team: {
+    title: {
+      highlight: "Unser Team",
+    },
+    subtitle: "Lernen Sie die Marketing-Experten kennen, die Ihr Unternehmen auf das nächste Level bringen.",
+    members: [
+      {
+        imageUrl: "https://i.pravatar.cc/150?img=35",
+        name: "Anna Fischer",
+        position: "Senior Marketing Strategin",
+        description: "Expertin für ganzheitliche Marketing-Strategien und Markenentwicklung.",
+        socialNetworks: [
+          {
+            name: "Linkedin",
+            url: "https://www.linkedin.com/in/anna-fischer/",
+          },
+          {
+            name: "Instagram",
+            url: "https://www.instagram.com/",
+          },
+        ],
+      },
+      {
+        imageUrl: "https://i.pravatar.cc/150?img=60",
+        name: "Markus Schmidt",
+        position: "Performance Marketing Expert",
+        description: "Spezialist für datengetriebene Marketing-Kampagnen und ROI-Optimierung.",
+        socialNetworks: [
+          {
+            name: "Linkedin",
+            url: "https://www.linkedin.com/in/markus-schmidt/",
+          },
+          {
+            name: "Facebook",
+            url: "https://www.facebook.com/",
+          },
+        ],
+      },
+      {
+        imageUrl: "https://i.pravatar.cc/150?img=36",
+        name: "Clara Weber",
+        position: "Content & Social Media Managerin",
+        description: "Kreative Storytellerin mit Fokus auf engagement-starke Content-Strategien.",
+        socialNetworks: [
+          {
+            name: "Linkedin",
+            url: "https://www.linkedin.com/in/clara-weber/",
+          },
+          {
+            name: "Instagram",
+            url: "https://www.instagram.com/",
+          },
+        ],
+      },
+      {
+        imageUrl: "https://i.pravatar.cc/150?img=17",
+        name: "Lukas Braun",
+        position: "SEO & Analytics Spezialist",
+        description: "Experte für Suchmaschinenoptimierung und datenbasierte Entscheidungen.",
+        socialNetworks: [
+          {
+            name: "Linkedin",
+            url: "https://www.linkedin.com/in/lukas-braun/",
+          },
+          {
+            name: "Facebook",
+            url: "https://www.facebook.com/",
+          },
+        ],
+      },
+    ],
+  },
+
+  pricing: {
+    title: {
+      main: "Unsere",
+      highlight: "Marketing-Pakete",
+    },
+    subtitle: "Flexible Marketing-Unterstützung, die zu Ihren Anforderungen passt.",
+    packages: [
+      {
+        title: "Starter Paket",
+        popular: false,
+        price: 2500,
+        description: "Ideal für kleine Unternehmen, die erste Schritte im professionellen Marketing gehen möchten.",
+        buttonText: "Beratungsgespräch",
+        benefits: [
+          "20h Marketing-Expertise pro Monat",
+          "Social Media Management",
+          "Content-Erstellung (2 Artikel/Monat)",
+          "Monatliches Reporting",
+        ],
+      },
+      {
+        title: "Business Paket",
+        popular: true,
+        price: 4500,
+        description: "Perfekt für wachsende Unternehmen mit umfassenden Marketing-Anforderungen.",
+        buttonText: "Jetzt durchstarten",
+        benefits: [
+          "40h Marketing-Expertise pro Monat",
+          "Content & Social Media Marketing",
+          "SEO & Performance Marketing",
+          "Wöchentliches Reporting & Optimierung",
+        ],
+      },
+      {
+        title: "Enterprise Paket",
+        popular: false,
+        price: 0,
+        description: "Maßgeschneiderte Lösung für Unternehmen mit komplexen Marketing-Anforderungen.",
+        buttonText: "Individuelles Angebot",
+        benefits: [
+          "Dediziertes Marketing-Team",
+          "Vollumfängliche Marketing-Strategie",
+          "Multi-Channel-Kampagnen",
+          "Tägliches Monitoring & Optimierung",
+        ],
+      },
+    ],
+  },
+
+  contact: {
+    title: {
+      highlight: "Marketing-Projekt",
+      main: "Starten Sie Ihr",
+      end: "mit uns",
+    },
+    subtitle: "Lassen Sie uns gemeinsam Ihre Marketing-Ziele erreichen.",
+    form: {
+      title: "Kontaktieren Sie uns",
+      description: "Füllen Sie das Formular aus und wir melden uns innerhalb von 24 Stunden bei Ihnen.",
+      fields: {
+        firstName: "Vorname",
+        lastName: "Nachname",
+        email: "E-Mail",
+        company: "Unternehmen",
+        message: "Ihre Nachricht",
+      },
+      button: "Nachricht senden",
+    },
+    info: {
+      title: "Kontaktinformationen",
+      description: "Sie erreichen uns auch direkt über folgende Wege:",
+      email: {
+        label: "E-Mail",
+        value: "kontakt@my-scale.de",
+      },
+      phone: {
+        label: "Telefon",
+        value: "+49 (0) 123 456 789",
+      },
+      address: {
+        label: "Adresse",
+        street: "Musterstraße 123",
+        city: "12345 Berlin",
+      },
+    },
+  },
+
+  newsletter: {
+    title: {
+      main: "Marketing-Insights in Ihrem",
+      highlight: "Postfach",
+    },
+    subtitle: "Erhalten Sie regelmäßig aktuelle Marketing-Trends, Best Practices und exklusive Tipps von unseren Experten.",
+    form: {
+      placeholder: "Ihre E-Mail-Adresse",
+      button: "Newsletter abonnieren",
+    },
+  },
+
+  faq: {
+    title: {
+      main: "Häufig gestellte",
+      highlight: "Fragen",
+    },
+    questions: [
+      {
+        question: "Wie funktioniert externes Marketing mit Ihrem Team?",
+        answer: "Unser Ansatz basiert auf drei Kernprinzipien: Flexibilität, Expertise und Ergebnisorientierung. Zunächst analysieren wir Ihre spezifischen Anforderungen und Marketing-Ziele. Basierend darauf stellen wir Ihnen ein maßgeschneidertes Team von Marketing-Experten zur Verfügung, die genau die Fähigkeiten mitbringen, die Sie benötigen. Diese arbeiten dann eng mit Ihrem internen Team zusammen - ob vor Ort oder remote, ob Vollzeit oder nur für bestimmte Projekte. Wir passen uns dabei flexibel an Ihre Bedürfnisse an und können die Unterstützung jederzeit hoch- oder herunterskalieren.",
+      },
+      {
+        question: "Welche Marketing-Bereiche decken Sie ab?",
+        answer: "Wir bieten ein umfassendes Spektrum an Marketing-Dienstleistungen an. Dies umfasst Content Marketing (Blog-Artikel, Whitepaper, Case Studies), Social Media Marketing (Strategie und Management für alle relevanten Plattformen), Performance Marketing (SEA, Display Advertising, Retargeting), SEO (technische Optimierung, Content-SEO, Link Building), E-Mail-Marketing, Analytics und Conversion-Optimierung. Besonders stark sind wir in der Integration verschiedener Marketing-Kanäle zu einer kohärenten, datengetriebenen Strategie.",
+      },
+      {
+        question: "Wie lange dauert es, bis wir erste Ergebnisse sehen?",
+        answer: "Die Zeitspanne bis zu messbaren Ergebnissen variiert je nach Ausgangssituation und Zielsetzung. Bei Performance Marketing-Maßnahmen wie Google Ads oder Social Media Advertising können erste Resultate oft schon nach wenigen Wochen sichtbar sein. Content Marketing und SEO-Maßnahmen benötigen typischerweise 3-6 Monate für signifikante Ergebnisse. Wir setzen dabei auf einen ausgewogenen Mix aus Quick Wins und nachhaltigen, langfristigen Strategien.",
+      },
+      {
+        question: "Wie flexibel ist die Zusammenarbeit?",
+        answer: "Maximale Flexibilität ist einer unserer wichtigsten Grundsätze. Sie können unsere Unterstützung tage-, wochen- oder monatsweise buchen, je nach Ihrem aktuellen Bedarf. Auch der Umfang ist flexibel skalierbar - von einzelnen Spezialisten bis hin zu kompletten Marketing-Teams. Die Zusammenarbeit kann remote oder vor Ort erfolgen, auch eine Kombination ist möglich.",
+      },
+    ],
+    contact: {
+      text: "Haben Sie weitere Fragen?",
+      linkText: "Kontaktieren Sie uns",
+      href: "#contact",
+    },
+  },
+
+  footer: {
+    logo: {
+      text: "my-scale.de",
+      href: "/",
+    },
+    sections: [
+      {
+        title: "Social Media",
+        links: [
+          { label: "LinkedIn", href: "#" },
+          { label: "Instagram", href: "#" },
+          { label: "Facebook", href: "#" },
+        ],
+      },
+      {
+        title: "Services",
+        links: [
+          { label: "Content Marketing", href: "#" },
+          { label: "Performance Marketing", href: "#" },
+          { label: "Social Media Marketing", href: "#" },
+        ],
+      },
+      {
+        title: "Über uns",
+        links: [
+          { label: "Team", href: "#" },
+          { label: "Referenzen", href: "#" },
+          { label: "FAQ", href: "#" },
+        ],
+      },
+      {
+        title: "Ressourcen",
+        links: [
+          { label: "Marketing Blog", href: "#" },
+          { label: "Case Studies", href: "#" },
+          { label: "Marketing Guide", href: "#" },
+        ],
+      },
+    ],
+    copyright: {
+      text: "© 2024 entwickelt von",
+      link: {
+        text: "my-scale.de",
+        href: "https://my-scale.de",
+      },
+    },
+  },
+
+  heroCards: {
+    testimonial: {
+      image: "https://github.com/shadcn.png",
+      name: "Anna Berg",
+      position: "Marketing Direktorin, TechCorp",
+      comment: "Das externe Marketing-Team hat unsere Online-Präsenz komplett transformiert. Die Expertise und Flexibilität sind genau das, was wir brauchten.",
+    },
+    team: {
+      image: "https://i.pravatar.cc/150?img=58",
+      name: "Max Meier",
+      position: "Senior Marketing Stratege",
+      comment: "Wir bringen jahrelange Marketing-Expertise in Ihr Unternehmen - genau dann, wenn Sie sie brauchen.",
+      linkedin: "https://linkedin.com/in/max-meier",
+    },
+    pricing: {
+      title: "Marketing Sprint",
+      badge: "Beliebt",
+      duration: "3 Monate",
+      description: "Perfekt für Unternehmen, die schnelle Marketing-Erfolge erzielen möchten.",
+      benefits: [
+        "Dedizierter Marketing-Experte",
+        "Content-Strategie & Umsetzung",
+        "Performance-Analyse & Optimierung",
+      ],
+    },
+    expertise: {
+      title: "Unsere Expertise",
+      description: "Von Social Media bis SEO: Wir bringen Ihr Marketing auf das nächste Level - flexibel und resultatorientiert.",
+    },
+  },
+
+  statistics: {
+    stats: [
+      {
+        quantity: "150+",
+        description: "Erfolgreiche Marketing-Projekte",
+      },
+      {
+        quantity: "200+",
+        description: "Zufriedene Unternehmen",
+      },
+      {
+        quantity: "500%",
+        description: "Durchschnittliches ROI",
+      },
+      {
+        quantity: "12 Jahre",
+        description: "Marketing-Expertise",
+      },
+    ],
+  },
+};
