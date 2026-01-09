@@ -4,24 +4,24 @@ import { X, Check } from "lucide-react";
 export const DetailedComparison = () => {
   const comparisonData = [
     {
-      bisher: "Unauffindbar bei Google & Co.",
-      jetzt: "Top-Platzierungen für konstante Anfragen"
+      bisher: "Excel-Chaos und manuelle Datenpflege",
+      jetzt: "Zentrale Datenbank und automatisierte Prozesse"
     },
     {
-      bisher: "Veraltetes Design schreckt Besucher ab",
-      jetzt: "Professioneller Auftritt schafft sofort Vertrauen"
+      bisher: "Standardsoftware passt nicht zum Prozess",
+      jetzt: "Software passt sich zu 100% Ihren Abläufen an"
     },
     {
-      bisher: "Keine mobil optimierte Darstellung",
-      jetzt: "Perfekte Ansicht auf allen Endgeräten"
+      bisher: "Fehleranfällige manuelle Übertragung",
+      jetzt: "Fehlerfreie Schnittstellen zwischen Systemen"
     },
     {
-      bisher: "Komplizierte Navigation, hohe Absprungrate",
-      jetzt: "Klarer Aufbau führt Besucher zum Ziel"
+      bisher: "Langsame Arbeitsabläufe durch Workarounds",
+      jetzt: "Maximale Effizienz durch optimierte Workflows"
     },
     {
-      bisher: "Technisch langsam und unsicher",
-      jetzt: "Superschnelle Ladezeiten und DSGVO-konform"
+      bisher: "Hohe laufende Lizenzkosten",
+      jetzt: "Kosteneffiziente Entwicklung dank KI"
     }
   ];
 
@@ -30,11 +30,11 @@ export const DetailedComparison = () => {
       <div className="container">
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-14 leading-tight text-white">
-          Eine schlechte Website kostet Sie jeden Tag bares Geld...
+          Ineffiziente Software kostet Sie jeden Tag bares Geld...
         </h2>
         <p className="text-lg text-white max-w-4xl mx-auto">
-          Egal ob Sie neue Kunden gewinnen oder qualifizierte Mitarbeiter anziehen wollen: Ihre Website ist der erste Eindruck. 
-          Ist dieser veraltet oder unprofessionell, klicken Besucher sofort weg – zur Konkurrenz. Eine moderne Website ist kein Kostenfaktor, sondern Ihre wichtigste Investition.
+          Egal ob Sie Aufträge bearbeiten oder Projekte verwalten: Ihre Software ist das Rückgrat Ihres Unternehmens. 
+          Ist diese starr oder fehleranfällig, verlieren Sie wertvolle Arbeitszeit. Eine maßgeschneiderte Software ist kein Kostenfaktor, sondern Ihr größter Hebel für Effizienz.
         </p>
       </div>
 
@@ -43,11 +43,11 @@ export const DetailedComparison = () => {
           {/* Header */}
           <div className="hidden md:grid md:grid-cols-2 bg-gray-50">
             <div className="p-6 text-center border-r border-gray-200">
-              <h3 className="text-xl font-bold text-red-600 mb-2">Veraltete Standard-Webseite</h3>
+              <h3 className="text-xl font-bold text-red-600 mb-2">Standardsoftware & Excel-Listen</h3>
               <p className="text-sm text-gray-600">Das verlieren Sie:</p>
             </div>
             <div className="p-6 text-center">
-              <h3 className="text-xl font-bold text-green-600 mb-2">Verkaufsstarke Unternehmenswebseite</h3>
+              <h3 className="text-xl font-bold text-green-600 mb-2">Individuelle Softwarelösung</h3>
               <p className="text-sm text-gray-600">Das gewinnen Sie:</p>
             </div>
           </div>
@@ -81,9 +81,9 @@ export const DetailedComparison = () => {
 
           {/* Mobile: Grouped Comparison */}
           <div className="md:hidden">
-            {/* Interner Marketingmitarbeiter Section */}
+            {/* Standardsoftware Section */}
             <div className="bg-red-50/30 rounded-lg p-4 mb-4">
-              <h4 className="text-lg font-bold text-red-600 mb-3">Veraltete Standard-Webseite</h4>
+              <h4 className="text-lg font-bold text-red-600 mb-3">Standardsoftware & Excel-Listen</h4>
               <div className="space-y-3">
                 {comparisonData.map((item, index) => (
                   <div key={index} className="flex items-start gap-3">
@@ -96,9 +96,9 @@ export const DetailedComparison = () => {
               </div>
             </div>
 
-            {/* Externes Marketingteam Section */}
+            {/* Individuelle Software Section */}
             <div className="bg-green-50/30 rounded-lg p-4">
-              <h4 className="text-lg font-bold text-green-600 mb-3">Verkaufsstarke Unternehmenswebseite</h4>
+              <h4 className="text-lg font-bold text-green-600 mb-3">Individuelle Softwarelösung</h4>
               <div className="space-y-3">
                 {comparisonData.map((item, index) => (
                   <div key={index} className="flex items-start gap-3">

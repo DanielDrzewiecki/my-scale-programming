@@ -179,17 +179,13 @@ export const Hero = () => {
           className="z-10 w-full sm:w-[90%] lg:w-full max-w-2xl mt-8 lg:mt-0"
         >
           {/* <HeroCards /> */}
-          <div className="relative aspect-video rounded-lg overflow-hidden shadow-2xl">
-            <iframe
-              src="https://player.vimeo.com/video/1133236350?autoplay=1&muted=1&loop=1&title=0&byline=0&portrait=0&dnt=1"
-              width="100%"
-              height="100%"
-              frameBorder="0"
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowFullScreen
-              className="absolute inset-0 w-full h-full"
+          <div className="relative aspect-video rounded-lg overflow-hidden shadow-2xl flex items-center justify-center bg-white">
+            <img
+              src="/src/assets/looking-ahead.png"
+              alt="KI-gestützte Prozessoptimierung"
+              className="w-full h-full object-contain p-4"
               loading="lazy"
-            ></iframe>
+            />
           </div>
         </motion.div>
       </div>

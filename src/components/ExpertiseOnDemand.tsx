@@ -1,34 +1,34 @@
 import { motion } from "framer-motion";
-import { Zap, TrendingUp, Search, Monitor } from "lucide-react";
+import { Zap, TrendingUp, Coins, Award } from "lucide-react";
 
 export const ExpertiseOnDemand = () => {
   const statistics = [
     {
-      icon: TrendingUp,
-      percentage: "Mehr Anfragen",
-      title: "",
-      description: "Eine optimierte Website generiert automatisch mehr Leads als Ihre alte Visitenkarte im Netz.",
-      color: "text-primary"
-    },
-    {
-      icon: Search,
-      percentage: "Top-Rankings",
-      title: "",
-      description: "Durch technisches SEO und relevante Inhalte finden Kunden Sie, bevor sie die Konkurrenz sehen.",
-      color: "text-primary"
-    },
-    {
-      icon: Monitor,
-      percentage: "Mobile Ready",
-      title: "",
-      description: "Perfekte Darstellung auf jedem Smartphone – dort, wo Ihre Kunden heute suchen.",
-      color: "text-primary"
-    },
-    {
       icon: Zap,
-      percentage: "Highspeed",
+      percentage: "Maximal effizient",
       title: "",
-      description: "Superschnelle Seiten sorgen für zufriedene Nutzer und bessere Google-Rankings.",
+      description: "Automatisieren Sie wiederkehrende Aufgaben und erledigen Sie Prozesse in Sekunden statt Stunden.",
+      color: "text-primary"
+    },
+    {
+      icon: Coins,
+      percentage: "Kosten senken",
+      title: "",
+      description: "Schluss mit teuren Abo-Gebühren für Standardsoftware. Einmal investieren, dauerhaft profitieren.",
+      color: "text-primary"
+    },
+    {
+      icon: TrendingUp,
+      percentage: "Skalierbar",
+      title: "",
+      description: "Ihre Software wächst mit Ihrem Unternehmen. Fügen Sie neue Funktionen hinzu, wann immer Sie sie brauchen.",
+      color: "text-primary"
+    },
+    {
+      icon: Award,
+      percentage: "Wettbewerbsvorteil",
+      title: "",
+      description: "Bieten Sie Kunden und Mitarbeitern digitale Services, die Ihre Konkurrenz noch lange nicht hat.",
       color: "text-primary"
     }
   ];
@@ -71,13 +71,12 @@ export const ExpertiseOnDemand = () => {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
             Warum erfolgreiche Unternehmen in{" "}
             <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-              moderne Websites investieren
+              individuelle Software investieren
             </span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Ihre Website ist der einzige Mitarbeiter, der 24/7 für Sie arbeitet, nie krank wird und keine Pause braucht. 
-            Eine professionelle Webseite amortisiert sich oft schon nach wenigen Wochen durch gewonnene Neukunden oder qualifizierte Bewerbungen. 
-            Setzen Sie auf messbare Ergebnisse statt "ganz hübsches Design":
+            Individuelle Software ist der einzige Mitarbeiter, der 24/7 Ihre Prozesse fehlerfrei ausführt. 
+            Sie skaliert mit Ihrem Wachstum und passt sich genau Ihren Anforderungen an – Schluss mit teuren Workarounds und manueller Arbeit.
           </p>
         </motion.div>
 
@@ -98,7 +97,7 @@ export const ExpertiseOnDemand = () => {
               <div className="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-2xl flex items-center justify-center">
                 <stat.icon className={`w-8 h-8 ${stat.color}`} />
               </div>
-              <div className={`text-3xl font-bold mb-2 ${stat.color}`}>
+              <div className={`text-xl md:text-2xl font-bold mb-2 ${stat.color}`}>
                 {stat.percentage}
               </div>
               <h3 className="text-lg font-semibold mb-3 text-gray-900 dark:text-gray-100">

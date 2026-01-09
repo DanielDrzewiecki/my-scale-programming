@@ -1,6 +1,6 @@
 import { content } from '@/content/content';
 import { motion } from "framer-motion";
-import { Camera, FileText, BarChart, Layout, Search, Palette, Users, Share2 } from "lucide-react";
+import { Camera, FileText, BarChart, Layout, Search, Palette, Users, Share2, Link, Database, Brain, Cloud, Code } from "lucide-react";
 
 export const Services = () => {
   const { services } = content;
@@ -14,6 +14,11 @@ export const Services = () => {
     Palette: Palette,
     Users: Users,
     Share2: Share2,
+    Link: Link,
+    Database: Database,
+    Brain: Brain,
+    Cloud: Cloud,
+    Code: Code,
   };
 
   return (

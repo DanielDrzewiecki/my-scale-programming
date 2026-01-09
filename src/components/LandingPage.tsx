@@ -52,7 +52,7 @@ export const LandingPage: React.FC = () => {
       {/* <InhouseCosts /> */}
       {/* <SkillCircle /> */}
       <ExpertiseOnDemand />
-      <ProjectResults />
+      {/* <ProjectResults /> */}
       {/* <CustomerJourney /> */}
       
       

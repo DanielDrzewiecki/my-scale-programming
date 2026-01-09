@@ -26,40 +26,40 @@ interface TrustpilotReview {
 
 export const content = {
   hero: {
-    chip: "",
+    chip: "KI-gestützte Webentwicklung",
     title: {
-      highlight: "Digitale Sichtbarkeit durch eine verkaufsstarke",
-      main: "Unternehmenswebseite."
+      highlight: "Individuelle Softwareentwicklung",
+      main: "zu 25% der Kosten dank KI"
     },
-    subtitle: "Ihre Webseite ist mehr als eine Visitenkarte: Sie ist Ihr bester Verkäufer, der rund um die Uhr Kunden überzeugt und qualifizierte Bewerber begeistert.",
-    description: "Veraltete Webseiten kosten Umsatz. Wir erstellen Ihren modernen Internetauftritt, der nicht nur gut aussieht, sondern funktioniert: Mehr Anfragen, bessere Sichtbarkeit bei Google und ein professioneller Eindruck, der im Gedächtnis bleibt.",
+    subtitle: "Schluss mit Excel-Listen und manuellen Prozessen. Wir entwickeln maßgeschneiderte Software, die sich Ihrem Unternehmen anpasst – nicht umgekehrt.",
+    description: "Wir helfen Unternehmen, den Einsatz von KI gewinnbringend zu meistern. Durch modernste KI-gestützte Entwicklung erhalten Sie Ihre individuelle Webanwendung schneller und günstiger als je zuvor. Automatisieren Sie Ihre Abläufe und ersetzen Sie starre Standardsoftware durch passgenaue Lösungen.",
     features: [
-      "Verkaufsoptimiertes Design",
-      "Suchmaschinenoptimierung (SEO)", 
-      "Mobil optimiert & schnell",
-      "Individuelle Beratung"
+      "Maßgeschneiderte Prozesse",
+      "Excel-Listen Ablösung",
+      "KI-gestützte Entwicklung",
+      "25% der üblichen Kosten"
     ],
     buttons: {
-      primary: "Kostenlose Beratung anfordern",
+      primary: "Kostenlose Analyse anfordern",
       secondary: "Leistung & Preise"
     },
-    ctaMicrocopy: "Kein Verkaufsgespräch. 20 Min, konkrete Analyse Ihrer Webseite.",
+    ctaMicrocopy: "Kein Verkaufsgespräch. 20 Min, konkrete Analyse Ihrer Prozesse.",
     benefits: [
-      "Mehr Kundenanfragen",
-      "Bessere Sichtbarkeit",
-      "Professionelles Image",
-      "Technische Perfektion"
+      "Prozesse automatisieren",
+      "Kosten senken",
+      "Effizienz steigern",
+      "Individuelle Lösungen"
     ],
     notices: [
       {
         icon: "EuroIcon",
-        text: "Verkaufspsychologischer Aufbau",
+        text: "75% Kostenersparnis",
         color: "text-green-600",
         bgColor: "bg-green-100"
       },
       {
         icon: "AwardIcon",
-        text: "Professioneller Auftritt",
+        text: "Software nach Maß",
         color: "text-blue-700",
         bgColor: "bg-blue-100"
       }
@@ -159,32 +159,32 @@ export const content = {
   about: {
     title: {
       highlight: "Wir machen starke",
-      main: "Unternehmen sichtbar",
+      main: "Unternehmen effizienter",
     },
-    subtitle: "Ihr gesamtheitlicher Partner für Wachstum und Digitalisierung.",
+    subtitle: "Ihr technologischer Partner für individuelle Software und Automatisierung.",
     description: [
-      "Mit unserem über 13-köpfigen Expertenteam aus Informatikern, Marketingprofis, Beratern, Designern, Textern und Video- & Fotografen unterstützen wir Ihr Unternehmen dabei, modern, professionell & überzeugend aufzutreten und dauerhaft unabhängig von Jobportalen, Headhuntern und Personaldienstleistern zu werden.",
-      "Praxisnah, sachgerecht und mit tiefem Verständnis für den Mittelstand und technische Berufe. Wir sind Ihr Partner für mehr Sichtbarkeit & gesamtheitliches Wachstum.",
+      "Hinter my-scale stehen Bastian Reinkober und Daniel Drzewiecki – zwei studierte Wirtschaftsinformatiker mit jahrelanger Erfahrung in der Softwareentwicklung. Doch erstklassiger Code allein reicht uns nicht: Unser interdisziplinäres Team umfasst auch erfahrene Designer, Fotografen und Marketing-Strategen.",
+      "Wir liefern nicht nur technische Exzellenz, sondern sorgen auch dafür, dass Ihre Lösung intuitiv bedienbar ist, professionell aussieht und bei Bedarf erfolgreich vermarktet wird. Wir verbinden Informatik mit starkem Design und Vermarktungskompetenz – alles aus einer Hand.",
     ],
     image: {
       src: "/team1.jpg",
-      alt: "my-scale Team - Ihr Partner für Sichtbarkeit",
+      alt: "my-scale Team - Ihr Partner für Softwareentwicklung",
     },
     stats: [
       {
         number: "150+",
-        description: "Zufriedene Kunden",
-        detail: "Über 150 kleine und mittelständische Unternehmen setzen bereits auf unsere Expertise im digitalen Marketing und in der Mitarbeitergewinnung."
+        description: "Erfolgreiche Projekte",
+        detail: "Über 150 Unternehmen profitieren bereits von unseren digitalen Lösungen, Automatisierungen und individuellen Anwendungen."
       },
       {
         number: "13+",
-        description: "Engagierte Experten",
-        detail: "Unser Team aus über 13 Digitalprofis arbeitet mit Leidenschaft an Ihrem Erfolg."
+        description: "Experten im Team",
+        detail: "Entwickler, Designer und Marketing-Profis arbeiten Hand in Hand an Ihrem Erfolg."
       },
       {
         number: "7+",
-        description: "Jahre Erfahrung",
-        detail: "Seit 2017 unterstützen wir Unternehmen erfolgreich bei ihrer digitalen Transformation und Marketingstrategie."
+        description: "Jahre Entwicklung",
+        detail: "Seit 2017 entwickeln und implementieren wir erfolgreich Softwarelösungen für den Mittelstand."
       }
     ]
   },
@@ -270,39 +270,39 @@ export const content = {
   services: {
     title: {
       highlight: "Gebündelte Expertise",
-      main: "- Ihre Website als Marketing-Zentrale",
+      main: "- Individuelle Software nach Maß",
     },
-    subtitle: "Eine erfolgreiche Website steht nie allein. Sie ist der Dreh- und Angelpunkt all Ihrer Marketing-Aktivitäten. Wir sorgen dafür, dass alle Räder ineinandergreifen.",
+    subtitle: "Eine erfolgreiche Software-Lösung muss sich nahtlos in Ihr Unternehmen einfügen. Wir verbinden modernste Technologie mit Ihren Geschäftsprozessen für maximale Effizienz.",
     serviceList: [
       {
-        title: "Karriereseiten",
-        description: "Machen Sie Ihre Website zum Bewerbermagneten: Integrierte Karriereportale, die Fachkräfte überzeugen.",
-        icon: "Users",
-      },
-      {
-        title: "Suchmaschinenoptimierung (SEO)",
-        description: "Gefunden werden, wo Ihre Kunden suchen: Technische und inhaltliche Optimierung für Top-Rankings bei Google.",
+        title: "Prozessanalyse",
+        description: "Wir analysieren Ihre bestehenden Abläufe und identifizieren Potenziale zur Automatisierung und Digitalisierung.",
         icon: "Search",
       },
       {
-        title: "Social Media Integration",
-        description: "Nahtlose Verbindung Ihrer Website mit LinkedIn, Instagram & Co. für maximale Reichweite und Interaktion.",
-        icon: "Share2",
+        title: "Webanwendungen",
+        description: "Maßgeschneiderte Portale, Dashboards und Tools, die genau das tun, was Ihre Mitarbeiter und Kunden brauchen.",
+        icon: "Layout",
       },
       {
-        title: "Performance Ready",
-        description: "Perfekt vorbereitet für Werbekampagnen: Landingpages und Tracking-Setups für Google & Social Ads.",
-        icon: "BarChart",
+        title: "Schnittstellen (API)",
+        description: "Schluss mit Datensilos: Wir verbinden Ihre Systeme (ERP, CRM, Buchhaltung) zu einer integrierten Einheit.",
+        icon: "Link",
       },
       {
-        title: "Content & Copywriting",
-        description: "Texte, die verkaufen: Professionelle Inhalte, die Ihre Botschaft klar kommunizieren und Vertrauen aufbauen.",
-        icon: "FileText",
+        title: "Datenmanagement",
+        description: "Strukturierte Datenbanken statt Excel-Chaos. Sicherer Import und Verwaltung Ihrer wertvollen Unternehmensdaten.",
+        icon: "Database",
       },
       {
-        title: "Foto- & Videoproduktion",
-        description: "Visuelle Überzeugungskraft: Authentische Bilder und Videos direkt in Ihre Website eingebunden.",
-        icon: "Camera",
+        title: "KI-Integration",
+        description: "Nutzen Sie künstliche Intelligenz für intelligente Analysen, Chatbots oder automatisierte Textverarbeitung.",
+        icon: "Brain",
+      },
+      {
+        title: "Cloud & Security",
+        description: "Hochverfügbares Hosting in Deutschland, regelmäßige Backups und modernste Sicherheitsstandards.",
+        icon: "Cloud",
       }
     ],
   },
@@ -640,58 +640,58 @@ export const content = {
       highlight: "Preisgestaltung",
       main: "Transparente"
     },
-    subtitle: "Jederzeit volle Kostenkontrolle. Ohne Überraschungen.",
+    subtitle: "Von MVP bis Enterprise: Wir entwickeln Ihre Plattform von der ersten Idee bis zur Produktion. Volle Kostenkontrolle in jedem Schritt.",
     priceAnchor: {
-      title: "Marketing-Paket",
-      startingPrice: "ab 2.499",
-      description: "Strategieentwicklung, Webseiten, Social Media, Video, Content & Werbung"
+      title: "Software-Entwicklung",
+      startingPrice: "Individuell",
+      description: "Maßgeschneiderte Softwarelösungen für Ihre spezifischen Anforderungen"
     },
     packages: [
       {
-        title: "Landingpage",
+        title: "MVP / Prototyp",
         popular: false,
-        price: "ab 2.000 €",
+        price: "ab 5.000 €",
         priceUnit: "",
-        description: "Perfekt für spezifische Kampagnen oder Produkte",
-        buttonText: "Angebot anfordern",
+        description: "Der schnelle Start: Validieren Sie Ihre Idee mit einem funktionalen Prototypen.",
+        buttonText: "Projekt anfragen",
         benefits: [
-          "Fokus auf Conversion",
-          "Klares Design",
-          "Schnelle Ladezeit",
-          "Mobile optimiert",
-          "Kontaktformular-Integration"
+          "Funktionsfähiger Prototyp",
+          "Fokus auf Kernfunktionen",
+          "Schnelle Markteinführung",
+          "Basis UI/UX Design",
+          "Ideal für User-Feedback"
         ],
       },
       {
-        title: "Unternehmenswebseite (S)",
+        title: "Business Applikation",
         popular: true,
-        price: "ab 6.000 €",
+        price: "ab 15.000 €",
         priceUnit: "",
-        description: "Der professionelle Einstieg für kleine Unternehmen",
-        buttonText: "Angebot anfordern",
+        description: "Professionelle Software zur Digitalisierung Ihrer Unternehmensprozesse.",
+        buttonText: "Projekt anfragen",
         benefits: [
-          "Bis zu 10 Unterseiten",
-          "Modernes Design",
-          "SEO-Basisoptimierung",
-          "Mobile & Tablet optimiert",
-          "Blog-Funktionalität",
-          "Datenschutzkonform"
+          "Individuelle Workflows",
+          "Benutzerverwaltung & Rollen",
+          "Datenbank-Architektur",
+          "API-Schnittstellen",
+          "Interaktive Dashboards",
+          "DSGVO-konform & sicher"
         ],
       },
       {
-        title: "Unternehmenswebseite (L)",
+        title: "Enterprise Plattform",
         popular: false,
         price: "Individuell",
         priceUnit: "",
-        description: "Umfassende Lösung für etablierte Unternehmen",
-        buttonText: "Angebot anfordern",
+        description: "Skalierbare High-End Lösungen für komplexe Anforderungen und große Datenmengen.",
+        buttonText: "Beratung buchen",
         benefits: [
-          "Unbegrenzte Unterseiten",
-          "Premium Design & Animationen",
-          "Erweiterte SEO-Strategie",
-          "Mehrsprachigkeit möglich",
-          "Integration von Drittsystemen",
-          "Content-Erstellung inklusive"
+          "Microservices Architektur",
+          "Hochverfügbarkeit (HA)",
+          "KI-Integration & Analytics",
+          "Legacy-System Migration",
+          "SLA & 24/7 Support",
+          "Audit-sichere Protokollierung"
         ],
       },
     ],
@@ -768,57 +768,57 @@ export const content = {
     questions: [
       {
         question:
-          "Wie lange dauert die Erstellung einer neuen Webseite?",
+          "Wie lange dauert die Entwicklung einer Software?",
         answer:
-          "Der Zeitrahmen hängt stark vom gewünschten Umfang ab. Für eine kompakte Landingpage benötigen wir meist ein bis zwei Wochen. Eine umfangreichere Unternehmenswebseite realisieren wir in der Regel innerhalb von vier bis acht Wochen. Zu Projektbeginn erstellen wir gemeinsam einen verbindlichen Zeitplan.",
+          "Das hängt stark vom Projektumfang ab. Einen ersten funktionierenden Prototypen (MVP) realisieren wir oft schon in 4-6 Wochen. Umfangreichere Business-Anwendungen benötigen in der Regel 3 bis 6 Monate. Wir erstellen zu Beginn einen detaillierten Zeitplan mit klaren Meilensteinen.",
       },
       {
         question:
-          "Kann ich Inhalte später selbst ändern?",
+          "Ist die Software später erweiterbar?",
         answer:
-          "Ja, das ist problemlos möglich. Wir bauen Ihre Webseite so auf, dass Sie Texte und Bilder ganz einfach selbst austauschen können. Dafür sind keine Programmierkenntnisse nötig und wir zeigen Ihnen in einer kurzen Einführung genau, wie es funktioniert.",
+          "Absolut. Wir entwickeln modular und skalierbar. Das bedeutet, Sie können mit den wichtigsten Funktionen starten und die Software später Schritt für Schritt um neue Features erweitern, wenn Ihr Unternehmen wächst.",
       },
       {
         question:
-          "Wird meine Webseite auch auf Handys gut aussehen?",
+          "Läuft die Anwendung auch auf Tablets und Smartphones?",
         answer:
-          "Auf jeden Fall. Wir entwickeln nach dem Prinzip 'Mobile First'. Das heißt für Sie: Ihre Webseite sieht auf Smartphones, Tablets und Desktop-Computern gleichermaßen professionell aus und lässt sich auf allen Geräten intuitiv bedienen.",
+          "Ja. Wir entwickeln moderne Web-Applikationen, die 'responsive' sind. Ihre Mitarbeiter können die Software also problemlos auf dem Desktop im Büro, auf dem Tablet in der Produktion oder auf dem Smartphone unterwegs nutzen.",
       },
       {
         question:
-          "Kümmern Sie sich auch um die Suchmaschinenoptimierung?",
+          "Wie sicher sind unsere Unternehmensdaten?",
         answer:
-          "Ja, eine solide technische Basisoptimierung ist bei uns immer im Preis enthalten. Zusätzlich bieten wir Ihnen gerne weiterführende Strategien an, mit denen wir Ihre Sichtbarkeit bei Google dauerhaft und nachhaltig steigern.",
+          "Sicherheit hat bei uns höchste Priorität. Wir setzen auf moderne Verschlüsselungsstandards, regelmäßige Backups und sicheres Hosting in Deutschland (auf Wunsch). Zudem entwickeln wir strikt nach DSGVO-Vorgaben.",
       },
       {
         question:
-          "Was kostet eine neue Webseite?",
+          "Was kostet eine individuelle Software-Lösung?",
         answer:
-          "Eine Landingpage beginnt bei uns ab 2.000 Euro. Für eine vollständige Unternehmenswebseite starten die Preise ab 6.000 Euro. Ihre individuellen Anforderungen und Wünsche besprechen wir am besten persönlich in einem kostenlosen Beratungsgespräch.",
+          "Ein MVP / Prototyp startet bei uns ab ca. 5.000 €. Professionelle Business-Anwendungen beginnen meist ab 15.000 €. Da jede Lösung individuell ist, erstellen wir Ihnen nach einer kostenlosen Erstberatung ein transparentes Festpreis-Angebot.",
       },
       {
         question:
-          "Helfen Sie auch bei der Erstellung von Texten und Bildern?",
+          "Können bestehende Systeme (ERP, CRM) angebunden werden?",
         answer:
-          "Selbstverständlich. Wir bieten Ihnen den kompletten Service aus einer Hand an. Das reicht von professionellen Werbetexten über hochwertige Fotoshootings bis hin zu authentischen Imagevideos für Ihren perfekten Auftritt.",
+          "Ja, das ist eine unserer Kernkompetenzen. Über Schnittstellen (APIs) verbinden wir Ihre neue Software nahtlos mit bestehenden Systemen wie SAP, DATEV, Salesforce oder HubSpot, um Datensilos zu vermeiden.",
       },
       {
         question:
-          "Was passiert nach der Fertigstellung der Webseite?",
+          "Was passiert nach der Fertigstellung des Projekts?",
         answer:
-          "Wir lassen Sie auch nach dem Go-live nicht allein. Gerne übernehmen wir die regelmäßige Wartung für Updates, Backups und Sicherheit. So bleibt Ihre Seite technisch immer auf dem neuesten Stand und Sie müssen sich um nichts kümmern.",
+          "Wir lassen Sie nicht allein. Wir bieten Wartungsverträge (SLAs) für Updates, Sicherheitspatches und Support an. Zudem stehen wir Ihnen gerne für die langfristige Weiterentwicklung Ihrer Software zur Verfügung.",
       },
       {
         question:
-          "Wir haben schon eine Webseite. Können Sie diese überarbeiten?",
+          "Können wir unsere alten Excel-Daten übernehmen?",
         answer:
-          "Ja, wir führen auch Relaunches durch. Dabei schauen wir uns Ihre bestehende Seite genau an, übernehmen funktionierende Inhalte und geben ihr ein modernes sowie verkaufsstarkes Upgrade.",
+          "Ja. Im Rahmen der Entwicklung kümmern wir uns um die Datenmigration. Wir analysieren Ihre bestehenden Excel-Tabellen oder Altdaten und importieren diese strukturiert und bereinigt in die neue Datenbank.",
       },
       {
         question:
-          "Ist die neue Webseite dann auch datenschutzkonform?",
+          "Wem gehört der Quellcode am Ende?",
         answer:
-          "Datenschutz nehmen wir sehr ernst. Wir integrieren alle nötigen Elemente wie Cookie-Banner und Datenschutzerklärungen direkt für Sie. Zudem achten wir penibel auf eine saubere technische Umsetzung, indem wir beispielsweise Google Fonts lokal einbinden.",
+          "Bei einer Individualentwicklung erhalten Sie umfassende Nutzungsrechte am Quellcode. Sie sind nicht an uns gebunden (kein Vendor-Lock-in) und haben die volle Kontrolle über Ihr digitales Asset.",
       }
     ],
     contact: {

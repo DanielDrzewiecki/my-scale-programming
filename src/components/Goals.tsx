@@ -1,34 +1,34 @@
 import { motion } from "framer-motion";
-import { Target, TrendingUp, DollarSign, ShoppingCart, UserPlus, Settings } from "lucide-react";
+import { Settings, FileSpreadsheet, Brain, TrendingUp, ShieldCheck, Database } from "lucide-react";
 
 const goals = [
   {
     id: 1,
-    text: "Auf Google gefunden werden",
-    icon: Target,
+    text: "Prozesse automatisieren",
+    icon: Settings,
     color: "text-primary",
     bgColor: "bg-primary/10",
     borderColor: "border-primary/20"
   },
   {
     id: 2,
-    text: "Kaufbereite Kunden anziehen",
-    icon: ShoppingCart,
+    text: "Excel-Listen ablösen",
+    icon: FileSpreadsheet,
     color: "text-primary",
     bgColor: "bg-primary/10",
     borderColor: "border-primary/20"
   },
   {
     id: 3,
-    text: "Mitarbeiter gewinnen",
-    icon: UserPlus,
+    text: "Kosten senken durch KI",
+    icon: Brain,
     color: "text-primary",
     bgColor: "bg-primary/10",
     borderColor: "border-primary/20"
   },
   {
     id: 4,
-    text: "Online-Umsatzkanal schaffen",
+    text: "Effizienz steigern",
     icon: TrendingUp,
     color: "text-primary",
     bgColor: "bg-primary/10",
@@ -36,16 +36,16 @@ const goals = [
   },
   {
     id: 5,
-    text: "Mit begrenzten Budgets maximale Leistung erzielen",
-    icon: DollarSign,
+    text: "Fehleranfälligkeit reduzieren",
+    icon: ShieldCheck,
     color: "text-primary",
     bgColor: "bg-primary/10",
     borderColor: "border-primary/20"
   },
   {
     id: 6,
-    text: "Konstante Auswertung und Optimierung",
-    icon: Settings,
+    text: "Daten zentralisieren",
+    icon: Database,
     color: "text-primary",
     bgColor: "bg-primary/10",
     borderColor: "border-primary/20"
@@ -86,10 +86,10 @@ export const Goals = () => {
         className="text-center mb-12"
       >
         <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-          Marketing kostet Sie nur Zeit, Geld und Nerven?
+          Manuelle Prozesse kosten Sie Zeit, Geld und Nerven?
         </h2>
         <p className="text-lg text-white max-w-4xl mx-auto mb-8">
-          Unsere Kunden wissen: ohne gutes Marketing geht es nicht. Doch für die interne Umsetzung fehlt es oft an Zeit und geeigneten Mitarbeitern, um selbstständig alle wichtigen Bereiche abzudecken
+          Unsere Kunden wissen: ohne effiziente Prozesse geht es nicht. Doch Standardsoftware passt oft nicht und Excel-Listen stoßen schnell an ihre Grenzen. Wir entwickeln die passende Software-Lösung für Ihre individuellen Anforderungen.
         </p>
       </motion.div>
 
@@ -129,13 +129,13 @@ export const Goals = () => {
         className="text-center mt-16"
       >
         <h3 className="text-center text-2xl lg:text-3xl font-bold mb-8 text-primary">
-          Schaffen Sie mehr als all' die Jahre zuvor.
+          Digitalisieren Sie Ihr Unternehmen jetzt.
         </h3>
         <button 
           onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
           className="bg-primary hover:bg-primary/90 text-white font-semibold text-lg py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
         >
-          Unverbindlich kennenlernen
+          Kostenlose Analyse anfordern
         </button>
       </motion.div>
       </div>
